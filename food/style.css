@@ -1,0 +1,22 @@
+.conteinerReceita{
+    border: solid 1px blueviolet;
+    display:flex; 
+    justify-content: space-around
+}
+
+.conteinerImagem{
+    width: 100px;
+    height: 100px;
+}
+
+.conteinerInfo{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteinerDesc{
+    background-color: pink;
+    
+}
