@@ -1,15 +1,15 @@
 <?php 
     $tipo = [
-        'nome' => 'search.php?s=Arrabiata',  // Pesquisar refeição por nome
-        'firstLetter' => 'search.php?f=b', // Listar todas as refeições pela primeira letra
+        'nome' => 'search.php?s=Arrabiata',  // Pesquisar refeição por nome OK
+        'firstLetter' => 'search.php?f=b', // Listar todas as refeições pela primeira letra OK
         'id' => 'lookup.php?i=52772', // Pesquisar detalhes completos da refeição por ID
         'random' => 'random.php', // Pesquisar uma única refeição aleatória
-        'princIngrediente' => 'filter.php?i=chicken_breast', // Filtrar por ingrediente principal
-        'categoria' => 'filter.php?c=Seafood',  // Filtrar por categoria
-        'area' => 'filter.php?a=Canadian', // Filtrar por área
-        'listarCategorias' => 'list.php?c=list', // Listar todas as categorias
-        'listarAreas' => 'list.php?a=list', // Listar todas as áreas
-        'listarIngredientes' => 'list.php?i=list' // Listar todas as ingredientes
+        'princIngrediente' => 'filter.php?i=chicken_breast', // Filtrar por ingrediente principal OK
+        'categoria' => 'filter.php?c=Seafood',  // Filtrar por categoria OK
+        'area' => 'filter.php?a=Canadian', // Filtrar por área OK
+        'listarCategorias' => 'list.php?c=list', // Listar todas as categorias OK
+        'listarAreas' => 'list.php?a=list', // Listar todas as áreas OK
+        'listarIngredientes' => 'list.php?i=list' // Listar todas as ingredientes  OK
     ];
 
     function busca($complemento){
@@ -34,7 +34,7 @@
 
         curl_close($curl);
         
-        chamarFuncaoJS($response);
+        return $response;
         
     };
 
